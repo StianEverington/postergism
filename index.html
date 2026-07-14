@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO core -->
     <title>Postergism - A new economic theory by Stian Everington</title>
     <meta name="description" content="Discover Postergism, a modern economic theory exploring work, society, and the future of worth once human labour is no longer essential. Includes links to the book, podcast, and TikTok.">
-    <meta name="keywords" content="Postergism, economic theory, Stian Everington, future of work, surplus society">
+    <meta name="keywords" content="Postergism, economic theory, Stian Everington, future of work, surplus society, surplus society book, future of work podcast">
     <meta name="author" content="Stian Everington">
     <link rel="canonical" href="https://postergism.com/">
+
+    <!-- Open Graph (for sharing) -->
+    <meta property="og:title" content="Postergism - A new economic theory by Stian Everington">
+    <meta property="og:description" content="Postergism explores what happens to work, worth, and society when human labour is no longer essential.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://postergism.com/">
+    <meta property="og:image" content="https://postergism.com/Logo.png">
+
+    <!-- Styles -->
     <style>
-        ...
-    </style>
-</head>
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -28,16 +37,16 @@
             line-height: 1.7;
             margin: 0;
             padding: 0;
-            background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(12, 12, 12, 0.95)), 
+            background: linear-gradient(rgba(18, 18, 18, 0.75), rgba(12, 12, 12, 0.95)),
                         url('https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: #e0e0e0; 
+            color: #e0e0e0;
             text-align: center;
         }
 
-        /* --- FEATURE 1: SCROLL PROGRESS BAR CSS --- */
+        /* Scroll progress bar */
         #progress-container {
             position: fixed;
             top: 0;
@@ -47,23 +56,23 @@
             background: transparent;
             z-index: 9999;
         }
+
         #scroll-bar {
             height: 100%;
             width: 0%;
-            /* Seamless gradient from Amazon gold to Spotify green to TikTok white */
             background: linear-gradient(to right, #ff9900, #1DB954, #ffffff);
             box-shadow: 0px 0px 10px rgba(29, 185, 84, 0.8);
         }
 
         header {
             background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.6) 60%, transparent 100%);
-            padding: 60px 20px 80px 20px; 
+            padding: 60px 20px 80px 20px;
             margin: 0;
         }
 
         .logo {
             width: 100%;
-            max-width: 900px; 
+            max-width: 900px;
             height: auto;
             animation: atmosphericPulse 6s ease-in-out infinite;
         }
@@ -95,163 +104,3 @@
             max-width: 250px;
             height: auto;
             border-radius: 14px;
-            margin: 20px 0;
-            box-shadow: 0 12px 32px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .display-img:hover {
-            transform: scale(1.02);
-        }
-
-        p {
-            color: #b3b3b3;
-            font-size: 1.05rem;
-            margin-bottom: 25px;
-        }
-
-        /* --- FEATURE 2: REDACTED INTERACTIVE QUOTES CSS --- */
-        .quote-container {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 20px;
-            border-left: 3px solid #3a3a3a;
-            border-radius: 8px;
-            margin: 25px 0;
-            font-style: italic;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-        }
-        .redacted {
-            background-color: #111;
-            color: #111;
-            padding: 0 4px;
-            border-radius: 3px;
-            transition: all 0.5s ease;
-            cursor: help;
-        }
-        /* Hover over the black bar to reveal text in ominously speculative blue glow */
-        .redacted:hover {
-            background-color: transparent;
-            /* Changed to speculative blue theme color */
-            color: #1E90FF; 
-            text-shadow: 0 0 8px rgba(30, 144, 255, 0.6);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 32px;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            margin-top: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-amazon { 
-            background-color: #ff9900; 
-            color: #121212; 
-        }
-
-        .btn-amazon:hover { 
-            background-color: #ffb347;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 153, 0, 0.25);
-        }
-
-        .btn-spotify { 
-            background-color: #1DB954; 
-            color: #ffffff;
-        }
-
-        .btn-spotify:hover { 
-            background-color: #1ed760;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(29, 185, 84, 0.3);
-        }
-
-        .btn-tiktok {
-            background-color: #000000;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-        }
-
-        .btn-tiktok:hover {
-            background-color: #111111;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255,255,255,0.15);
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
-            margin: 40px 0;
-        }
-    </style>
-</head>
-<body>
-
-    <div id="progress-container">
-        <div id="scroll-bar"></div>
-    </div>
-
-    <header>
-        <img src="Logo.png" alt="Website Logo" class="logo">
-    </header>
-
-    <div class="container">
-        
-        <div class="section">
-            <h2>Featured Book</h2>
-            <img src="Book Cover.png" alt="Book Cover" class="display-img">
-            <p>Postergism reimagines what an economy could look like when traditional jobs fade and society evolves. Through bold ideas and thought‑provoking scenarios, it challenges readers to see the future differently and rethink what truly drives progress.</p>
-            
-            <div class="quote-container">
-                <p style="margin:0;">"The fear of being surplus is felt most strongly by <span class="redacted">those who were never hungry, but are no longer needed.</span>"</p>
-            </div>
-
-            <p>Grab your copy on Amazon today and step into the next era of economic imagination.</p>
-            <a href="https://www.amazon.co.uk/dp/B0H7L6JVFM/ref=sr_1_3?crid=2JBNVXH7XRMHP&dib=eyJ2IjoiMSJ9.5TQrzB7-eHDVe0Be8A2Ux1SDawqP2lle5vWlUUGA8VY4GqYRgqMjWXrOcHi1TKQIjb8VrvZXVMd7U9ozxHSSklUJuBb6hBSnUNj5jFAyI3c.qMtWoixdVWxMkTgoRHzzrwnYZ5hysNZSRp-xhd7zrLg&dib_tag=se&keywords=surplus+kindle&qid=1783113957&sprefix=surplus+kindle%2Caps%2C121&sr=8-3" target="_blank" class="btn btn-amazon">Buy on Amazon</a>
-        </div>
-
-        <hr>
-
-        <div class="section">
-            <h2>The Podcast</h2>
-            <img src="Podcast.png" alt="Podcast Icon" class="display-img">
-            <p>Want to dive deeper? Listen to the companion podcast on Spotify, where we discuss the background context, governance, and explore a world once work is no longer essential.</p>
-            
-            <div class="quote-container">
-                <p style="margin:0;">"When material scarcity is largely addressed, it becomes more about other measures of worth than income. <span class="redacted">Meaning, usefulness and worth as we know it are no longer guaranteed.</span>"</p>
-            </div>
-
-            <a href="https://open.spotify.com/show/033JwCuzlnokJVN67okN9W" target="_blank" class="btn btn-spotify">Listen on Spotify</a>
-        </div>
-
-        <hr>
-
-        <div class="section">
-            <h2>Follow on TikTok</h2>
-            <img src="TikTok.png" alt="TikTok Icon" class="display-img">
-            <p>Get short, engaging insights and updates on TikTok.</p>
-            
-            <div class="quote-container">
-                <p style="margin:0;">"Governments will act, but reluctantly. They will stabilise material needs to ensure survival and manage unrest but when such policy lags behind technological and social change the most secure in today’s society may <span class="redacted">feel themselves most exposed. The unsettling truth behind all this is even where survival is assured, being unnecessary is still dangerous.</span>"</p>
-            </div>
-
-            <a href="https://www.tiktok.com/@surplus.whatnext" target="_blank" class="btn btn-tiktok">Visit TikTok</a>
-        </div>
-
-    </div>
-
-    <script>
-        window.onscroll = function() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("scroll-bar").style.width = scrolled + "%";
-        };
-    </script>
-
-</body>
-</html>
